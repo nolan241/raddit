@@ -8,6 +8,10 @@
 
       <div class="form-inputs">
 
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, class: "form-control", :autofocus => true %>
+      </div>
 
       <div class="form-group">
         <%= f.label :email %>
@@ -29,13 +33,4 @@
       <div class="form-group">
         <%= f.submit "Update", class: "btn btn-primary" %>
       </div>
-
-    <% end %>
-  </div>
-  <div class="panel-footer">
-
-    <h3>Cancel my account</h3>
-
-    <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-default" %></p>
-
-  </div>
+<% end %> 
